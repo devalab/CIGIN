@@ -5,7 +5,7 @@ CIGIN is a chemically interpretable graph interaction network for prediction of 
 #### Requirements:
 - PyTorch
 - Numpy 
-- Rdkit
+- RDKit
 
 #### Usage:
 - Examples for prediction and analysis of interaction between solute and solvent atoms are given in the notebook. 
