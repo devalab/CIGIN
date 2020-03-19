@@ -16,8 +16,11 @@ CIGIN is a chemically interpretable graph interaction network for prediction of 
 
 #### People
 Yashaswi Pathak
+
 Siddhartha Laghuvarapu
+
 Sarvesh Mehta
+
 U. Deva Priyakumar
 
 If you find this  useful in your research, please cite:
