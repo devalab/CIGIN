@@ -1,5 +1,7 @@
 # CIGIN : Chemically Interpretable Graph Interaciton Network 
-Official implementation of [CIGIN] (https://chemrxiv.org/articles/Chemically_Interpretable_Graph_Interaction_Network_for_Prediction_of_Pharmacokinetic_Properties_of_Drug-like_Molecules/10282346)
+Official implementation of [CIGIN](https://chemrxiv.org/articles/Chemically_Interpretable_Graph_Interaction_Network_for_Prediction_of_Pharmacokinetic_Properties_of_Drug-like_Molecules/10282346)
+
+
 CIGIN is a chemically interpretable graph interaction network for prediction of pharmacokinetic properties of drug-like molecules.
 
 #### Requirements:
@@ -14,13 +16,17 @@ CIGIN is a chemically interpretable graph interaction network for prediction of 
 
 #### Acknowledgements
 Mr. Siddhartha Laghuvarapu
+
 Mr. Sarvesh Mehta
 
 If you find this  useful in your research, please cite:
-@article{cigin,
-  title={Chemically Interpretable Graph Interaction Network for Prediction of Pharmacokinetic Properties of Drug-like Molecules},
-  author={Y. Pathak, S. Laghuvarapu, S. Mehta and U. D. Priyakumar},
-  journal={ChemRxiv},
-  year={2019},
-  doi={https://doi.org/10.26434/chemrxiv.10282346.v1}
-}
+
+
+	@article{cigin,
+	title={Chemically Interpretable Graph Interaction Network for Prediction of Pharmacokinetic Properties of Drug-like Molecules},
+	author={Y. Pathak, S. Laghuvarapu, S. Mehta and U. D. Priyakumar},
+	journal={ChemRxiv},
+	year={2019},
+	doi={https://doi.org/10.26434/chemrxiv.10282346.v1}
+	}
+
