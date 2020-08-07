@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def one_of_k_encoding(x, allowable_set):
     if x not in allowable_set:
         raise Exception("input {0} not in allowable set{1}:".format(

@@ -1,9 +1,8 @@
+import numpy as np
 from dgl import DGLGraph
-
 from rdkit import Chem
 from rdkit.Chem import rdMolDescriptors as rdDesc
-
-from utils import *
+from utils import one_of_k_encoding_unk, one_of_k_encoding, get_len_matrix
 
 
 def get_atom_features(atom, stereo, features, explicit_H=False):

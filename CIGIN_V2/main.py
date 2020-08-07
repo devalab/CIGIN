@@ -7,16 +7,21 @@ import argparse
 # rdkit imports
 from rdkit import RDLogger
 from rdkit import rdBase
-
+from rdkit import Chem
 
 # torch imports
 from torch.utils.data import DataLoader, Dataset
 from torch.optim.lr_scheduler import ReduceLROnPlateau
+import torch
+
+#dgl imports
+import dgl
 
 # local imports
-from model import *
-from train import *
-from molecular_graph import *
+from model import CIGINModel
+from train import train
+from molecular_graph import get_graph_from_smile
+from utils import *
 
 lg = RDLogger.logger()
 lg.setLevel(RDLogger.CRITICAL)

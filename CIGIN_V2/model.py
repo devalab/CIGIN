@@ -1,4 +1,3 @@
-import dgl
 from dgl import DGLGraph
 from dgl.nn.pytorch import Set2Set, NNConv, GATConv
 
