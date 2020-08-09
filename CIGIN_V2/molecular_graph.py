@@ -8,10 +8,12 @@ from utils import one_of_k_encoding_unk, one_of_k_encoding
 def get_atom_features(atom, stereo, features, explicit_H=False):
     """
     Method that computes atom level features from rdkit atom object
-    :param atom: rdkit atom object
-    :return: atom features, 1d numpy array
+    :param atom:
+    :param stereo:
+    :param features:
+    :param explicit_H:
+    :return: the node features of an atom
     """
-    # todo: take list  of all possible atoms
     possible_atoms = ['C', 'N', 'O', 'S', 'F', 'P', 'Cl', 'Br', 'I', 'Si']
     atom_features = one_of_k_encoding_unk(atom.GetSymbol(), possible_atoms)
     atom_features += one_of_k_encoding_unk(atom.GetImplicitValence(), [0, 1])
