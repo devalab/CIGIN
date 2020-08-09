@@ -1,9 +1,12 @@
+import numpy as np
+
 from dgl import DGLGraph
 from dgl.nn.pytorch import Set2Set, NNConv, GATConv
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
 
 
 class GatherModel(nn.Module):
