@@ -68,12 +68,11 @@ class GatherModel(nn.Module):
 
         init = n_feat.clone()
         out = F.relu(self.lin0(n_feat))
-
-        if e_feat is None:
-            return out + init
-
         for i in range(self.num_step_message_passing):
-            m = torch.relu(self.conv(g, out, e_feat))
+            if e_feat is not None:
+                m = torch.relu(self.conv(g, out, e_feat))
+            else:
+                m = torch.relu(self.conv.bias +  self.conv.res_fc(out))
             out = self.message_layer(torch.cat([m, out], dim=1))
         return out + init
 
